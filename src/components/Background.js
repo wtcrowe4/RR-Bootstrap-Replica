@@ -1,5 +1,8 @@
 import Card from 'react-bootstrap/Card'
 import Form from 'react-bootstrap/Form'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+
 
 let Background = () => {
     return (
@@ -7,6 +10,17 @@ let Background = () => {
             <div>
                 <Card style={{ width: "1300px", minHeight: "428px", marginBottom: "50px", backgroundColor: "#DEEED6" }} className="text-black">
                     <div style={{ top: "auto", width: "578px", marginLeft: "100px", marginBottom: "50px", marginTop: "75px"}}>
+                        <Navbar>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                            <Navbar.Collapse id="basic-navbar-nav">
+                                <Nav className="mr-auto" style={{}}>
+                                    
+
+                                </Nav>
+                            </Navbar.Collapse>
+                        </Navbar>  
+                        
+                        
                         <Card.Text style={{ fontSize: "2.5em", fontWeight: "bold" }}>
                             Order groceries for delivery <br /> or pickup today
                     </Card.Text>
@@ -46,3 +60,5 @@ let Background = () => {
 }
 
 export default Background;
+
+ 
